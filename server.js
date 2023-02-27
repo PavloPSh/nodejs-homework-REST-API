@@ -4,7 +4,7 @@ require("dotenv").config();
 
 
 const { DB_HOST, PORT = 3000 } = process.env;
-// прописати в env на render.com
+
 
 
 mongoose.connect(DB_HOST)

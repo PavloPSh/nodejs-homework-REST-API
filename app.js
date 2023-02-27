@@ -26,5 +26,4 @@ app.use((err, req, res, next) => {
 
 module.exports = app;
 
-// Pavlo - login
-// 0gOIpYm9pEtbkbVP - password
+
