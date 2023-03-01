@@ -9,9 +9,13 @@ const constactSchema = Joi.object({
 
 const updateFavoriteSchema = Joi.object({
   favorite: Joi.boolean().required(),
-})
+});
 
-module.exports = {
+const schema = {
   constactSchema,
   updateFavoriteSchema,
 }
+
+
+module.exports = schema;
+  
