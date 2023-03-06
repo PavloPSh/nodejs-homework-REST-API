@@ -5,7 +5,7 @@ const router = express.Router()
 const ctrl = require('../../controllers/conatacts')
 
 const { validateBody, isValidId } = require('../../middlewares');
-const {schema} = require('../../schemas');
+const { schema } = require('../../schemas');
 
 
 
