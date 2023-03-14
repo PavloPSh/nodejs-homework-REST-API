@@ -13,7 +13,9 @@ router.post('/login', validateBody(userSchemas.userSchema), ctrl.login);
 
 router.get('/current', authenticate, ctrl.getCurrentUser);
 
-router.post('/logout', authenticate, ctrl.logout)
+router.post('/logout', authenticate, ctrl.logout);
+
+router.patch('/', authenticate, validateBody(userSchemas.updateSubsSchema), ctrl.updateSubscription)
 
 
 module.exports = router;
