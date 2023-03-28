@@ -10,11 +10,16 @@ const userSchema = Joi.object({
 
 const updateSubsSchema = Joi.object({
     subscription: Joi.string().valid("starter", "pro", "business").required(),
-})
+});
+
+const emailSchema = Joi.object({
+    email: Joi.string().required().pattern(emailRegexp),
+});
 
 const schema = {
     userSchema,
-    updateSubsSchema
-}
+    updateSubsSchema,
+    emailSchema,
+};
 
 module.exports = schema;
